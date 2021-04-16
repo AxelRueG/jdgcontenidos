@@ -9,15 +9,24 @@
   </head>
   <body>
     <div class="logo">
-      <div class="square">
-
-      </div>
-      <!-- <div>
-        <span class="name">
-          JDG
-        </span>
-        <span>MARKETING DIGITAL</span>
-      </div> -->
+      <canvas width="225" height="225"></canvas>
     </div>
   </body>
+  <script>
+    let canvas = document.querySelector("canvas");
+    let context = canvas.getContext("2d");
+
+    context.fillStyle = "white";
+    context.fillRect(0, 0, 150, 10);
+    context.fillRect(0, 0, 10, 150);
+
+    context.fillRect(140, 0, 10, 75);
+    context.fillRect(0, 140, 75, 10);
+
+    context.fillRect(225, 225, -150, -10);
+    context.fillRect(225, 225, -10, -150);
+    
+    context.fillRect(225, 75, -85, 10);
+    context.fillRect(75, 225, 10, -85);
+  </script>
 </html>

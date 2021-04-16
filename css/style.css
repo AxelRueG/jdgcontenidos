@@ -8,8 +8,8 @@
 
 :root{
     /* variables */
-    --chargin-logo-size: 12.5em;
-    --chargin-logo-line: 0.4em;
+    --chargin-logo-size: 14.1em;
+    /* --chargin-logo-line: 14.1em; */
 }
 
 body{
@@ -26,59 +26,11 @@ body{
 }
 
 .logo{
-    /* padding: 10px;
-    border: 1px solid #666; */
-    /* width:  calc(var(--chargin-logo-size) * 1.5);
-    height: calc(var(--chargin-logo-size) * 1.5); */
+    border: 1px solid #666;
     width: var(--chargin-logo-size);
     height: var(--chargin-logo-size);
 }
 
-.square{
-    width: var(--chargin-logo-size);
-    height: var(--chargin-logo-size);
-
-    position: relative;
-    animation-name: lado;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-delay: 0s;
-}
-
-@keyframes lado {
-    0%{
-        border-top: 0.4em solid white;
-        border-right: 0.4em solid white;
-        border-bottom: 0.4em solid white;
-        border-left: 0.4em solid rgba(200,200,200,0.5);
-    }
-    33%{
-        border-top: 0.4em solid rgba(200,200,200,0.5);
-        border-right: 0.4em solid white;
-        border-bottom: 0.4em solid white;
-        border-left: 0.4em solid white;
-    }
-    66%{
-        border-top: 0.4em solid white;
-        border-right: 0.4em solid rgba(200,200,200,0.5);
-        border-bottom: 0.4em solid white;
-        border-left:  0.4em solid white;
-    }
-    100%{
-        border-top: 0.4em solid white;
-        border-right: 0.4em solid white;
-        border-bottom: 0.4em solid rgba(200,200,200,0.5);
-        border-left: 0.4em solid white;
-    }
-}
-/* .square::before{
-    content: '';
-    width: var(--chargin-logo-size);
-    height: var(--chargin-logo-size);
-    border: 0.4em solid white;
-
-    position: absolute;
-    top: calc(var(--chargin-logo-size) / 2);
-    left: calc(var(--chargin-logo-size) / 2);
+/* canvas{
+    background: white;
 } */
