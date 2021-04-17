@@ -8,8 +8,7 @@
 
 :root{
     /* variables */
-    --chargin-logo-size: 14.1em;
-    /* --chargin-logo-line: 14.1em; */
+    --chargin-logo-size: 12em;
 }
 
 body{
@@ -17,6 +16,7 @@ body{
     width: 100vw;
 
     background-color: #333;
+    color: white;
 
     display: flex;
     justify-content: center;
@@ -26,11 +26,33 @@ body{
 }
 
 .logo{
-    border: 1px solid #666;
+    /* border: 2px solid white; */
     width: var(--chargin-logo-size);
     height: var(--chargin-logo-size);
+    
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
 }
 
-/* canvas{
-    background: white;
-} */
+
+.grand1{
+    grid-column: 13 / 19;
+    grid-row: 1 / 7;
+}
+.grand2{
+    grid-column: 2 / 12;
+    grid-row: 2 / 12;
+}
+.grand3{
+    grid-column: 12 / 18;
+    grid-row: 8 / 18;
+}
+.grand4{
+    grid-column: 1 / 7;
+    grid-row: 13 / 19;
+}
+.grand5{
+    grid-column: 8 / 12;
+    grid-row: 12 / 18;
+}
