@@ -10,7 +10,7 @@ let pos = [ 0,1,2,3,4,5,6,7,8,9,10,11,
             36,34,32,30,22,20,18,16,14,12 ];
 
 const printPixel = (i,it,clear) => {
-    pixel.item(pos[i]).style = 'background-color: white;';
+    pixel.item(pos[i]).style = 'background-color: var(--color-main);';
     if (clear){
       pixel.item(pos[it]).style = 'background-color: transparent;';
     }
@@ -31,10 +31,24 @@ const start = () =>{
     if(clc){
       (it<pixel.length-1)? it++:it=0;
     }
-  },120);
+  },40);
+
+  /* in charging is 30 */
 }
 
 // ---------------------------------------------------------
-// let body = document.body;
 
-document.addEventListener('DOMContentLoaded',start());
+// const typed = new Typed('.typed',
+//   {
+//    strings: ['...'],
+//    typeSpeed: 300,
+//    startDelay: 300,
+//    backSpeed: 300,
+//    backDelay: 300,
+//    loop: true,
+//    loopCount: false,
+//    showCursor: false, 
+//   }
+// )
+
+start();
